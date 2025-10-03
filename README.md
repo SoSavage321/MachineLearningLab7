@@ -39,3 +39,6 @@ Ensembles consistently outperform individual models by blending strengths:
 - Random Forest → Balanced, with feature randomness  
 
 Ensembles cost more compute but deliver **robust, reliable results** when matched to dataset quirks.
+
+## Brief Report
+Ensemble methods, such as majority voting (ROC AUC 0.97), reliably outperformed individual models (0.88-0.92) by leveraging diverse predictions to minimize errors. On the nonlinear Wine dataset, bagging (+0.084 test accuracy) and AdaBoost (+0.042) showed clear gains over single trees. For Iris, simpler models like KNN thrived, but hyperparameter tuning lifted ensemble performance (~0.95 accuracy). The key lesson is to match the method to the data’s characteristics: bagging for high-variance scenarios, AdaBoost for sequential error correction. Ensembles demand more computation but offer robust, generalizable results when thoughtfully applied.
