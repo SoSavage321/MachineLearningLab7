@@ -6,7 +6,7 @@ This project explores **ensemble methods** (majority voting, bagging, AdaBoost, 
 
 ---
 
-##Analysis Answers
+## Analysis Answers
 
 ## Majority Voting vs. Individual Classifiers
 
