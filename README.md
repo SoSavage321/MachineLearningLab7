@@ -3,7 +3,7 @@
 # Ensemble Learning Analysis
 
 This research investigates **ensemble methods** (majority voting, bagging, AdaBoost, random forest) versus individual classifiers (logistic regression, decision tree, KNN) using datasets such as Wine and Iris.
----
+
 
 ## Analysis Answers
 
