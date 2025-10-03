@@ -25,18 +25,18 @@ On the Iris dataset, KNN led with a 0.9518 accuracy, likely because Iris’s low
 Majority voting is computationally lightweight, as it parallelizes a small set of models. Bagging and AdaBoost, however, scale with the number of estimators (complexity ~ O(n_estimators * base_model_cost)), making them more demanding but GPU-friendly. Larger ensembles reduce variance, which is great for noisy data, but weak base learners can introduce bias if not carefully tuned—early stopping helps find the sweet spot. Voting suits quick prototyping (e.g., in data science competitions), bagging is effective for high-variance problems like financial forecasting, and AdaBoost shines in scenarios like medical diagnostics, where correcting rare errors is critical.
 
 **When to use**:
-- Voting → Fast prototyping (e.g., Kaggle competitions)  
-- Bagging → Volatile data (e.g., stock prices)  
-- AdaBoost → Error-sensitive tasks (e.g., rare disease detection)  
+- Voting :Fast prototyping (e.g., Kaggle competitions)  
+- Bagging :Volatile data (e.g., stock prices)  
+- AdaBoost : Error-sensitive tasks (e.g., rare disease detection)  
 
 ---
 
 ## Key Takeaway
-Ensembles consistently outperform individual models by blending strengths:  
-- Majority Voting → Best overall (ROC AUC 0.97)  
-- Bagging → Stabilizes high-variance learners  
-- AdaBoost → Focuses on hard-to-classify cases  
-- Random Forest → Balanced, with feature randomness  
+By combining strengths, ensembles routinely perform better than individual models:  
+ Overall, the majority vote was the best (ROC AUC 0.97).  
+ High-variance learners are stabilized using bagging.  
+ AdaBoost focuses on circumstances that are difficult to categorize.  
+ Random Forest → Balanced, with randomization in features
 
 Ensembles cost more compute but deliver **robust, reliable results** when matched to dataset quirks.
 
