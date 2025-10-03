@@ -6,6 +6,8 @@ This project explores **ensemble methods** (majority voting, bagging, AdaBoost, 
 
 ---
 
+##Analysis Answers
+
 ## Majority Voting vs. Individual Classifiers
 
 The majority voting classifier achieved a ROC AUC of 0.97 (±0.04), surpassing logistic regression (0.92 ±0.09), decision tree (0.88 ±0.07), and KNN (0.89 ±0.10). This edge comes from the ensemble’s ability to balance out individual model flaws. Each classifier—whether it’s logistic regression struggling with nonlinear patterns or KNN faltering on outliers—makes unique errors. Voting aggregates their predictions, smoothing out mistakes and reducing both variance and bias. However, it’s not always a win. If the base models are too similar (e.g., all decision trees) or one consistently misleads the group, the ensemble can underperform. Small datasets also limit diversity, making voting less effective.
